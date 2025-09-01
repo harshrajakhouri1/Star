@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stars & Code - Where Ambition Meets Direction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-black text-white">
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/20 backdrop-blur-md border-b border-gray-600/30">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+          <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <polygon points="12,2 15.09,8.26 22,9 17,14.74 18.18,21.02 12,17.77 5.82,21.02 7,14.74 2,9 8.91,8.26"/>
+          </svg>
+          <span class="text-xl font-bold text-white">Stars & Code</span>
+        </div>
+        <div class="nav-desktop hidden md:flex items-center space-x-8">
+          <a href="#home" class="text-white hover:text-blue-400 transition-colors">Home</a>
+          <a href="#expertise" class="text-white hover:text-blue-400 transition-colors">Expertise</a>
+          <a href="#resources" class="text-white hover:text-blue-400 transition-colors">Resources</a>
+          <a href="#contact" class="text-white hover:text-blue-400 transition-colors">Contact</a>
+        </div>
+        <button class="nav-mobile md:hidden text-white" onclick="toggleMobileMenu()">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="relative min-h-screen w-full overflow-hidden bg-black">
+    <!-- Earth Background -->
+    <div class="absolute inset-0 z-5">
+      <img
+        src="https://static.wixstatic.com/media/1813e9_699d862ec43a4063ae9b41b71025ccbe~mv2.png"
+        alt="Earth from space"
+        class="w-full h-full object-cover opacity-60"
+        style="filter: drop-shadow(0 0 50px rgba(66, 165, 245, 0.3)) drop-shadow(0 0 100px rgba(66, 165, 245, 0.2));"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60"></div>
+    </div>
+
+    <!-- Starfield Background -->
+    <div id="starfield" class="absolute inset-0 z-10"></div>
+
+    <!-- Main Hero Content -->
+    <div id="home" class="relative z-30 flex items-center justify-center min-h-screen px-6">
+      <div class="max-w-screen-2xl mx-auto text-center">
+        <div class="space-y-8">
+          <h1 class="hero-text font-bold text-3xl md:text-5xl lg:text-6xl text-white leading-tight">
+            Where Ambition<span class="gradient-text"> Meets Direction</span>
+          </h1>
+          <p class="hero-subtext text-lg md:text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">
+            Every skill is a star. Stars & Code helps you link them into a journey that's clear, purposeful, and yours.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="relative z-30 py-20 px-6 bg-gradient-to-b from-black/40 to-black/60 backdrop-blur-sm">
+      <div class="max-w-screen-2xl mx-auto">
+        <div class="animate-on-scroll text-center mb-16">
+          <h2 class="font-bold text-3xl md:text-4xl lg:text-5xl text-white mb-6">
+            Stellar <span class="gradient-text-cyan">Expertise</span>
+          </h2>
+          <p class="text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+            Navigate through galaxies of knowledge with our expert guidance across the technology universe.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- AI/ML Engineering -->
+          <div class="animate-on-scroll card-hover bg-black/30 backdrop-blur-md border border-gray-600/50 hover:border-blue-400/50 transition-all duration-300 h-full group hover:shadow-lg hover:shadow-blue-500/20 rounded-lg overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.wixstatic.com/media/1813e9_790a1345ecb14847bf5c890afbcbf1a3~mv2.png?originWidth=384&originHeight=192" alt="AI/ML Engineering" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+              <div class="absolute bottom-4 left-4">
+                <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-3">AI/ML Engineering</h3>
+              <p class="text-white/80 leading-relaxed">Master artificial intelligence and machine learning technologies to build intelligent systems and drive the future of innovation.</p>
+            </div>
+          </div>
+
+          <!-- Software Engineering -->
+          <div class="animate-on-scroll card-hover bg-black/30 backdrop-blur-md border border-gray-600/50 hover:border-purple-400/50 transition-all duration-300 h-full group hover:shadow-lg hover:shadow-purple-500/20 rounded-lg overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.wixstatic.com/media/1813e9_8f95704901494f20b6e72d000d572802~mv2.png?originWidth=384&originHeight=192" alt="Software Engineering" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+              <div class="absolute bottom-4 left-4">
+                <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <polyline points="16,18 22,12 16,6"></polyline>
+                  <polyline points="8,6 2,12 8,18"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-3">Software Engineering</h3>
+              <p class="text-white/80 leading-relaxed">Master software design principles and engineering practices to build scalable, maintainable applications and systems.</p>
+            </div>
+          </div>
+
+          <!-- Data Engineering -->
+          <div class="animate-on-scroll card-hover bg-black/30 backdrop-blur-md border border-gray-600/50 hover:border-cyan-400/50 transition-all duration-300 h-full group hover:shadow-lg hover:shadow-cyan-500/20 rounded-lg overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.wixstatic.com/media/1813e9_a841f4b857f44c11969ab9acb592445d~mv2.png?originWidth=384&originHeight=192" alt="Data Engineering" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+              <div class="absolute bottom-4 left-4">
+                <svg class="w-8 h-8 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-3">Data Engineering</h3>
+              <p class="text-white/80 leading-relaxed">Build robust data pipelines and infrastructure to process, transform, and manage large-scale data systems efficiently.</p>
+            </div>
+          </div>
+
+          <!-- Full Stack Development -->
+          <div class="animate-on-scroll card-hover bg-black/30 backdrop-blur-md border border-gray-600/50 hover:border-green-400/50 transition-all duration-300 h-full group hover:shadow-lg hover:shadow-green-500/20 rounded-lg overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.wixstatic.com/media/1813e9_7b300b67be7840fcad7e509ce0eaab82~mv2.png?originWidth=384&originHeight=192" alt="Full Stack Development" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+              <div class="absolute bottom-4 left-4">
+                <svg class="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <polyline points="16,18 22,12 16,6"></polyline>
+                  <polyline points="8,6 2,12 8,18"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-3">Full Stack Development</h3>
+              <p class="text-white/80 leading-relaxed">Master both frontend and backend technologies to build complete web applications from concept to deployment.</p>
+            </div>
+          </div>
+
+          <!-- Data Analytics -->
+          <div class="animate-on-scroll card-hover bg-black/30 backdrop-blur-md border border-gray-600/50 hover:border-orange-400/50 transition-all duration-300 h-full group hover:shadow-lg hover:shadow-orange-500/20 rounded-lg overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.wixstatic.com/media/1813e9_a6647c3dbe0940fcae0e6ebb082badac~mv2.png?originWidth=384&originHeight=192" alt="Data Analytics" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+              <div class="absolute bottom-4 left-4">
+                <svg class="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-3">Data Analytics</h3>
+              <p class="text-white/80 leading-relaxed">Transform raw data into actionable insights using advanced analytics tools and statistical methods to drive business decisions.</p>
+            </div>
+          </div>
+
+          <!-- Elasticsearch -->
+          <div class="animate-on-scroll card-hover bg-black/30 backdrop-blur-md border border-gray-600/50 hover:border-yellow-400/50 transition-all duration-300 h-full group hover:shadow-lg hover:shadow-yellow-500/20 rounded-lg overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.wixstatic.com/media/1813e9_374bb0ace4e84711964e9fcb92253440~mv2.png?originWidth=384&originHeight=192" alt="Elasticsearch" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+              <div class="absolute bottom-4 left-4">
+                <svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.35-4.35"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-3">Elasticsearch</h3>
+              <p class="text-white/80 leading-relaxed">Master distributed search and analytics engine to build powerful search experiences and real-time data analysis solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="relative z-30 py-20 px-6 bg-gradient-to-b from-black/60 to-black/80 backdrop-blur-sm">
+      <div class="max-w-screen-2xl mx-auto">
+        <div class="animate-on-scroll text-center mb-16">
+          <h2 class="font-bold text-3xl md:text-4xl lg:text-5xl text-white mb-6">
+            Galactic <span class="gradient-text-cyan">Knowledge</span>
+          </h2>
+          <p class="text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+            Explore the infinite cosmos of technology knowledge and discover new frontiers in your learning journey.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Interview Preparation -->
+          <div class="animate-on-scroll card-hover bg-black/30 backdrop-blur-md border border-gray-600/50 hover:border-blue-400/50 transition-all duration-300 h-full group hover:shadow-lg hover:shadow-blue-500/20 rounded-lg overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.wixstatic.com/media/1813e9_f001652630d14b3995c15dec33b6e4d1~mv2.png?originWidth=384&originHeight=192" alt="Interview Preparation" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+              <div class="absolute bottom-4 left-4">
+                <svg class="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-3">Interview Preparation</h3>
+              <p class="text-white/80 leading-relaxed">Master technical interviews with comprehensive preparation materials, practice questions, and expert guidance.</p>
+            </div>
+          </div>
+
+          <!-- Resume Builder -->
+          <div class="animate-on-scroll card-hover bg-black/30 backdrop-blur-md border border-gray-600/50 hover:border-purple-400/50 transition-all duration-300 h-full group hover:shadow-lg hover:shadow-purple-500/20 rounded-lg overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.wixstatic.com/media/1813e9_60f2f9479e53419fa2278b66ff023073~mv2.png?originWidth=384&originHeight=192" alt="Resume Builder" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+              <div class="absolute bottom-4 left-4">
+                <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-3">Resume Builder</h3>
+              <p class="text-white/80 leading-relaxed">Create professional, ATS-friendly resumes with our intelligent builder designed specifically for tech professionals.</p>
+            </div>
+          </div>
+
+          <!-- Coding Challenges -->
+          <div class="animate-on-scroll card-hover bg-black/30 backdrop-blur-md border border-gray-600/50 hover:border-pink-400/50 transition-all duration-300 h-full group hover:shadow-lg hover:shadow-pink-500/20 rounded-lg overflow-hidden">
+            <div class="relative overflow-hidden">
+              <img src="https://static.wixstatic.com/media/1813e9_627a3fb5f3e74f71ae270e58eac688d5~mv2.png?originWidth=384&originHeight=192" alt="Coding Challenges" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+              <div class="absolute bottom-4 left-4">
+                <svg class="w-8 h-8 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
+                </svg>
+              </div>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-white mb-3">Coding Challenges</h3>
+              <p class="text-white/80 leading-relaxed">Sharpen your programming skills with interactive coding challenges and algorithmic problems designed to enhance your technical expertise.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="relative z-30 py-20 px-6 bg-gradient-to-b from-black/80 to-black">
+      <div class="max-w-screen-2xl mx-auto">
+        <div class="animate-on-scroll text-center mb-16">
+          <h2 class="font-bold text-3xl md:text-4xl lg:text-5xl text-white mb-6">
+            Connect with Our <span class="gradient-text-cyan">Cosmic Guides</span>
+          </h2>
+          <p class="text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+            Ready to take your tech career to the next level? Get in touch with our expert team for personalized guidance and support.
+          </p>
+        </div>
+        <div class="max-w-2xl mx-auto">
+          <div class="bg-black/30 backdrop-blur-md border border-gray-600/50 rounded-lg">
+            <div class="p-8">
+              <form id="contactForm" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="space-y-2">
+                    <label for="name" class="block text-sm font-medium text-white">Full Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your full name" class="w-full px-3 py-2 bg-black/20 border border-gray-600 text-white placeholder:text-white/50 focus:border-blue-400 focus:outline-none rounded" required/>
+                  </div>
+                  <div class="space-y-2">
+                    <label for="email" class="block text-sm font-medium text-white">Email Address</label>
+                    <input id="email" name="email" type="email" placeholder="your.email@example.com" class="w-full px-3 py-2 bg-black/20 border border-gray-600 text-white placeholder:text-white/50 focus:border-blue-400 focus:outline-none rounded" required/>
+                  </div>
+                </div>
+                <div class="space-y-2">
+                  <label for="subject" class="block text-sm font-medium text-white">Subject</label>
+                  <input id="subject" name="subject" type="text" placeholder="What can we help you with?" class="w-full px-3 py-2 bg-black/20 border border-gray-600 text-white placeholder:text-white/50 focus:border-blue-400 focus:outline-none rounded" required/>
+                </div>
+                <div class="space-y-2">
+                  <label for="message" class="block text-sm font-medium text-white">Message</label>
+                  <textarea id="message" name="message" placeholder="Tell us about your career goals and how we can help..." rows="5" class="w-full px-3 py-2 bg-black/20 border border-gray-600 text-white placeholder:text-white/50 focus:border-blue-400 focus:outline-none rounded resize-none" required></textarea>
+                </div>
+                <button type="submit" class="w-full btn-gradient text-white font-medium py-3 rounded-lg flex items-center justify-center space-x-2">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                  </svg>
+                  <span>Send Message</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="relative z-30 bg-black border-t border-gray-800">
+      <div class="max-w-screen-2xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Company Info -->
+          <div class="animate-on-scroll space-y-4">
+            <div class="flex items-center space-x-2">
+              <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <polygon points="12,2 15.09,8.26 22,9 17,14.74 18.18,21.02 12,17.77 5.82,21.02 7,14.74 2,9 8.91,8.26"/>
+              </svg>
+              <h3 class="text-xl font-bold text-white">Stars & Code</h3>
+            </div>
+            <p class="text-white/70 leading-relaxed">
+              Embark on an interstellar journey through the vast universe of technology and reach for the stars in your career.
+            </p>
+            <div class="flex space-x-4">
+              <div class="w-8 h-8 bg-blue-600/20 rounded-full flex items-center justify-center hover:bg-blue-600/30 transition-colors cursor-pointer">
+                <div class="w-4 h-4 bg-blue-400 rounded-full"></div>
+              </div>
+              <div class="w-8 h-8 bg-purple-600/20 rounded-full flex items-center justify-center hover:bg-purple-600/30 transition-colors cursor-pointer">
+                <div class="w-4 h-4 bg-purple-400 rounded-full"></div>
+              </div>
+              <div class="w-8 h-8 bg-pink-600/20 rounded-full flex items-center justify-center hover:bg-pink-600/30 transition-colors cursor-pointer">
+                <div class="w-4 h-4 bg-pink-400 rounded-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="animate-on-scroll space-y-4">
+            <h4 class="text-lg font-semibold text-white">Quick Links</h4>
+            <ul class="space-y-2">
+              <li><a href="#home" class="text-white/70 hover:text-blue-400 transition-colors">Home</a></li>
+              <li><a href="#resources" class="text-white/70 hover:text-purple-400 transition-colors">Resources</a></li>
+              <li><a href="#expertise" class="text-white/70 hover:text-purple-400 transition-colors">Expertise</a></li>
+              <li><a href="#about" class="text-white/70 hover:text-purple-400 transition-colors">About</a></li>
+              <li><a href="#contact" class="text-white/70 hover:text-purple-400 transition-colors">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="animate-on-scroll space-y-4">
+            <h4 class="text-lg font-semibold text-white">Services</h4>
+            <ul class="space-y-2">
+              <li><span class="text-white/70">Career Coaching</span></li>
+              <li><span class="text-white/70">Technical Mentoring</span></li>
+              <li><span class="text-white/70">Skill Assessment</span></li>
+              <li><span class="text-white/70">Interview Preparation</span></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="animate-on-scroll space-y-4">
+            <h4 class="text-lg font-semibold text-white">Get In Touch</h4>
+            <div class="space-y-3">
+              <div class="flex items-center space-x-3">
+                <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                <span class="text-white/70">info@starsncode.com</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+                <span class="text-white/70">+1 (909) 521-1113</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Final Footer (Copyright) -->
+    <footer class="p-6 text-center text-gray-400">
+      © 2025 Stars & Code. All rights reserved.
+    </footer>
+
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

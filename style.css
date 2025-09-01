@@ -1,0 +1,106 @@
+/* Animations */
+@keyframes starDriftHorizontal {
+  0% { transform: translateX(-10px); }
+  100% { transform: translateX(10px); }
+}
+
+@keyframes starDriftVertical {
+  0% { transform: translateY(-10px); }
+  100% { transform: translateY(10px); }
+}
+
+@keyframes starDriftDiagonal {
+  0% { transform: translate(-10px, -10px); }
+  100% { transform: translate(10px, 10px); }
+}
+
+@keyframes shootingStar {
+  0% { transform: translateX(-100px) translateY(-100px); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateX(300px) translateY(300px); opacity: 0; }
+}
+
+@keyframes fadeInUp {
+  0% { transform: translateY(50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Base Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Scroll Animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Card Hover Effect */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+}
+
+/* Hero Text Animation */
+.hero-text {
+  animation: fadeInUp 1s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+.hero-subtext {
+  animation: fadeInUp 1s ease-out 0.8s forwards;
+  opacity: 0;
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(to right, #9333ea, #a855f7, #c084fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-cyan {
+  background: linear-gradient(to right, #22d3ee, #60a5fa, #a855f7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Button Gradient */
+.btn-gradient {
+  background: linear-gradient(to right, #0891b2, #2563eb, #7c3aed);
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(to right, #0e7490, #1d4ed8, #6d28d9);
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(34, 211, 238, 0.25);
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-mobile {
+    display: none;
+  }
+}
